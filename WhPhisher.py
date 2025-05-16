@@ -239,7 +239,7 @@ def cuask(url):
 # Polite Exit
 def pexit():
     killer()
-    print("\n" + info2 + bcyan + "Thank you for using " + bwhite + "DarkGltch! " + bcyan + "By Elton John Justaga" + byellow + "--> " + bwhite + ":" + bcyan + " :D\n" + nc
+    print("\n" + info2 + bcyan + "Thank you for using " + bwhite + "DarkGltch! " + bcyan + "By Elton John Justaga" + byellow + "--> " + bwhite + ":" + bcyan + " :D\n" + nc)
     exit(0)
 
 
