@@ -63,7 +63,7 @@ logo=f'''
 {bcyan  }██████╔╝██║  ██║██║  ██║██║  ██╗╚██████╔╝███████╗██║   ██║   ╚██████╗██║  ██║
 {bpurple}╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝   ╚═╝    ╚═════╝╚═╝  ╚═╝
 
-{byellow}----> {bcyan}By {bwhite}Uvedoble {bcyan}Github {bwhite}WhBeatZ {byellow}<-----
+{byellow}----> {bcyan}By {bwhite}Elton John Justaga {bcyan}Github {bwhite}LaVenganzaDelLadron {byellow}<-----
 
 {white}- - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
